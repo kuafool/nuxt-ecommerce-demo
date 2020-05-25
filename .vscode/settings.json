@@ -1,0 +1,107 @@
+{
+  "vetur.format.defaultFormatter.html": "prettier",
+  "cSpell.enableFiletypes": [
+    "asciidoc",
+    "css",
+    "git-commit",
+    "html",
+    "javascript",
+    "json",
+    "jsonc",
+    "less",
+    "markdown",
+    "plaintext",
+    "scss",
+    "text",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "vue-html",
+    "vue-postcss",
+    "yaml",
+    "yml"
+  ],
+  "cSpell.words": [
+    // words
+    "geolocation",
+    "captcha",
+    "loadability",
+    "unclickable",
+    "qrcode",
+    "custermized",
+    "geolocate",
+    "dropdown",
+    "uploader",
+    "dropdowns",
+    "stateful",
+    "deactive",
+    // cmd
+    "whoami",
+    // Visual Studio Code
+    "endregion",
+    // editorconfig
+    "editorconfig",
+    // git
+    "gitignore",
+    "autocrlf",
+    // HTML
+    "iframe",
+    "readonly",
+    "maxlength",
+    "dataset",
+    "nbsp",
+    "nowrap",
+    // CSS, SASS
+    "SMACSS",
+    "keyframes",
+    "rgba",
+    "mixins",
+    // CSS colors
+    "transparant",
+    "lightcyan",
+    "lightpink",
+    "lightyellow",
+    "lightskyblue",
+    "lightcoral",
+    "lightblue",
+    "lightgreen",
+    // JavaScript
+    "typeof",
+    "concat",
+    // DOM events
+    "onresize",
+    "onscroll",
+    "mouseenter",
+    "mouseleave",
+    "compositionstart",
+    "compositionend",
+    "keyup",
+    // oauth
+    "oauth",
+    // magento
+    "magento",
+    // vue
+    "vuejs",
+    "vuex",
+    "vnode",
+    // Nuxt.js
+    "nuxt",
+    "nuxtjs",
+    "consola",
+    // devDependencies
+    "stylelint",
+    // dependencies
+    "axios",
+    "vuelidate",
+    "lazyload",
+    "swiper",
+    // third parties
+    "wechat",
+    "weibo",
+    "alipay",
+    // domain
+    "ecommerce",
+    // authors
+    "kuafool"
+  ]
+}
