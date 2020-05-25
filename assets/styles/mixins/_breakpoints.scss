@@ -1,0 +1,104 @@
+@mixin layout-mobile {
+  @content;
+}
+
+@mixin layout-mobile-only {
+  @media (max-width: $mobile-tablet-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin layout-tablet {
+  @media (min-width: $mobile-tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin layout-tablet-only {
+  @media (min-width: $mobile-tablet-breakpoint) and (max-width: $tablet-desktop-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin layout-desktop {
+  @media (min-width: $tablet-desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin layout-desktop-only {
+  @media (min-width: $tablet-desktop-breakpoint) and (max-width: $desktop-large-desktop-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin layout-large-desktop {
+  @media (min-width: $desktop-large-desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin layout-large-desktop-only {
+  @media (min-width: $desktop-large-desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin layout-mobile-tablet-only {
+  @media (max-width: $tablet-desktop-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin layout-mobile-tablet-desktop-only {
+  @media (max-width: $desktop-large-desktop-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin layout-tablet-desktop-only {
+  @media (min-width: $mobile-tablet-breakpoint) and (max-width: $desktop-large-desktop-breakpoint - 1px) {
+    @content;
+  }
+}
+
+@mixin layout-tablet-desktop-large-desktop-only {
+  @media (min-width: $mobile-tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin layout-desktop-large-desktop-only {
+  @media (min-width: $tablet-desktop-breakpoint) {
+    @content;
+  }
+}
+
+@mixin layout-responsive(
+  $property,
+  $mobile: null,
+  $tablet: null,
+  $desktop: null,
+  $large-desktop: null
+) {
+  @if ($mobile) {
+    @include layout-mobile {
+      #{$property}: $mobile;
+    }
+  }
+  @if ($tablet) {
+    @include layout-tablet {
+      #{$property}: $tablet;
+    }
+  }
+  @if ($desktop) {
+    @include layout-desktop {
+      #{$property}: $desktop;
+    }
+  }
+  @if ($large-desktop) {
+    @include layout-large-desktop() {
+      #{$property}: $large-desktop;
+    }
+  }
+}

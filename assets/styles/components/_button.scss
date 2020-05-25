@@ -1,0 +1,131 @@
+.component-button {
+  position: relative;
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: normal;
+  overflow: hidden;
+  cursor: pointer;
+
+  height: $button-height;
+  width: $button-width;
+  background-color: $button-background-color;
+  font-size: $button-font-size;
+  text-transform: $button-text-transform;
+  border-width: $button-border-width;
+  border-style: $button-border-style;
+  border-color: $button-border-color;
+  color: $button-color;
+
+  @include layout-tablet {
+    height: $button-tablet-height;
+    width: $button-tablet-width;
+    font-size: $button-tablet-font-size;
+  }
+
+  @include layout-desktop {
+    height: $button-desktop-height;
+    width: $button-desktop-width;
+    font-size: $button-desktop-font-size;
+  }
+
+  &:hover {
+    opacity: $button-hover-opacity;
+    background-color: $button-hover-background-color;
+    border-width: $button-hover-border-width;
+    color: $button-hover-color;
+  }
+
+  &:active {
+    opacity: $button-active-opacity;
+  }
+
+  &.is-disabled {
+    cursor: default;
+    opacity: $button-disabled-opacity;
+    background-color: $button-disabled-background-color;
+  }
+
+  &.component-button--primary {
+    background-color: $button-primary-background-color;
+    border-style: $button-primary-border-style;
+    border-width: $button-primary-border-width;
+    border-color: $button-primary-border-color;
+    color: $button-primary-color;
+    text-transform: $button-primary-text-transform;
+
+    &:hover {
+      background-color: $button-primary-hover-background-color;
+      border-width: $button-primary-hover-border-width;
+      color: $button-primary-hover-color;
+    }
+
+    &:active {
+      opacity: $button-primary-active-opacity;
+      background-color: $button-primary-hover-background-color;
+      border-width: $button-primary-hover-border-width;
+      color: $button-primary-hover-color;
+    }
+
+    &.is-disabled {
+      opacity: $button-primary-disabled-opacity;
+    }
+  }
+
+  &.component-button--secondary {
+    background: $button-secondary-background-color;
+    border-width: $button-secondary-border-width;
+    border-style: $button-secondary-border-style;
+    border-color: $button-secondary-border-color;
+    color: $button-secondary-color;
+    text-transform: $button-secondary-text-transform;
+
+    &:hover {
+      background-color: $button-secondary-hover-background-color;
+      border-width: $button-secondary-hover-border-width;
+      color: $button-secondary-hover-color;
+    }
+
+    &:active {
+      opacity: $button-secondary-active-opacity;
+      background-color: $button-secondary-hover-background-color;
+      border-width: $button-secondary-hover-border-width;
+      color: $button-secondary-hover-color;
+    }
+
+    &.is-disabled {
+      opacity: $button-secondary-disabled-opacity;
+    }
+  }
+
+  &.component-button--tertiary {
+    height: $button-tertiary-height;
+    width: $button-tertiary-width;
+    background: $button-tertiary-background-color;
+    border-width: $button-tertiary-border-width;
+    border-style: $button-tertiary-border-style;
+    border-color: $button-tertiary-border-color;
+    color: $button-tertiary-color;
+    font-size: $button-tertiary-font-size;
+    text-transform: $button-tertiary-text-transform;
+    text-decoration: $button-tertiary-text-decoration;
+
+    @include layout-tablet {
+      font-size: $button-tertiary-tablet-font-size;
+    }
+
+    &:hover {
+      background-color: $button-tertiary-hover-background-color;
+      border-width: $button-tertiary-hover-border-width;
+      color: $button-tertiary-hover-color;
+    }
+
+    &:active {
+      background-color: $button-tertiary-hover-background-color;
+      border-width: $button-tertiary-hover-border-width;
+      color: $button-tertiary-hover-color;
+    }
+  }
+}

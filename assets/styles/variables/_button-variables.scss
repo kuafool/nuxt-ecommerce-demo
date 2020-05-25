@@ -1,0 +1,200 @@
+//
+// .component-button
+//
+
+//
+// height
+//
+$button-height: 56px;
+$button-tablet-height: $button-height;
+$button-desktop-height: 44px;
+// primary
+$button-primary-height: $button-height;
+$button-primary-tablet-height: $button-tablet-height;
+$button-primary-desktop-height: $button-desktop-height;
+// secondary
+$button-secondary-height: $button-height;
+$button-secondary-tablet-height: $button-tablet-height;
+$button-secondary-desktop-height: $button-desktop-height;
+// tertiary
+$button-tertiary-height: auto;
+$button-tertiary-tablet-height: $button-tablet-height;
+$button-tertiary-desktop-height: $button-desktop-height;
+
+//
+// width
+//
+$button-width: 100%;
+$button-tablet-width: $button-width;
+$button-desktop-width: $button-tablet-width;
+// primary
+$button-primary-width: $button-width;
+$button-primary-tablet-width: $button-tablet-width;
+$button-primary-desktop-width: $button-desktop-width;
+// secondary
+$button-secondary-width: $button-width;
+$button-secondary-tablet-width: $button-tablet-width;
+$button-secondary-desktop-width: $button-desktop-width;
+// tertiary
+$button-tertiary-width: auto;
+$button-tertiary-tablet-width: $button-tablet-width;
+$button-tertiary-desktop-width: $button-desktop-width;
+
+//
+// background-color
+//
+$button-background-color: transparent;
+$button-primary-background-color: #000;
+$button-secondary-background-color: $button-background-color;
+$button-tertiary-background-color: $button-background-color;
+
+//
+// border
+//
+$button-border-style: solid;
+$button-border-width: 1px;
+$button-border-color: #000;
+$button-border-radius: 0;
+// primary
+$button-primary-border-style: $button-border-style;
+$button-primary-border-width: $button-border-width;
+$button-primary-border-color: $button-border-color;
+$button-primary-border-radius: $button-border-radius;
+// secondary
+$button-secondary-border-style: $button-border-style;
+$button-secondary-border-width: $button-border-width;
+$button-secondary-border-color: $button-border-color;
+$button-secondary-border-radius: $button-border-radius;
+// tertiary
+$button-tertiary-border-style: $button-border-style;
+$button-tertiary-border-width: 0;
+$button-tertiary-border-color: $button-border-color;
+$button-tertiary-border-radius: $button-border-radius;
+
+//
+// font-size
+//
+$button-font-size: 14px;
+$button-tablet-font-size: $button-font-size;
+$button-desktop-font-size: $button-tablet-font-size;
+// primary
+$button-primary-font-size: $button-font-size;
+$button-primary-tablet-font-size: $button-tablet-font-size;
+$button-primary-desktop-font-size: $button-desktop-font-size;
+// secondary
+$button-secondary-font-size: $button-font-size;
+$button-secondary-tablet-font-size: $button-tablet-font-size;
+$button-secondary-desktop-font-size: $button-desktop-font-size;
+// tertiary
+$button-tertiary-font-size: $button-font-size;
+$button-tertiary-tablet-font-size: $button-tablet-font-size;
+$button-tertiary-desktop-font-size: $button-desktop-font-size;
+
+//
+// color
+//
+$button-color: #000;
+$button-primary-color: #fff;
+$button-secondary-color: $button-color;
+$button-tertiary-color: $button-color;
+
+//
+// text-transform
+//
+$button-text-transform: none;
+$button-primary-text-transform: uppercase;
+$button-secondary-text-transform: uppercase;
+$button-tertiary-text-transform: uppercase;
+
+//
+// text-decoration
+//
+$button-text-decoration: none;
+$button-primary-text-decoration: none;
+$button-secondary-text-decoration: none;
+$button-tertiary-text-decoration: underline;
+
+//
+// hover - opacity
+//
+$button-hover-opacity: 1;
+$button-primary-hover-opacity: $button-hover-opacity;
+$button-secondary-hover-opacity: $button-hover-opacity;
+$button-tertiary-hover-opacity: $button-hover-opacity;
+//
+// hover - background-color
+//
+$button-hover-background-color: $button-background-color;
+$button-primary-hover-background-color: #555;
+$button-secondary-hover-background-color: #555;
+$button-tertiary-hover-background-color: transparent;
+//
+// hover - border-color
+//
+$button-hover-border-color: #555;
+$button-primary-hover-border-color: $button-primary-border-color;
+$button-secondary-hover-border-color: $button-secondary-border-color;
+$button-tertiary-hover-border-color: transparent;
+//
+// hover - border-width
+//
+$button-hover-border-width: $button-border-width;
+$button-primary-hover-border-width: $button-primary-border-width;
+$button-secondary-hover-border-width: $button-secondary-border-width;
+$button-tertiary-hover-border-width: $button-tertiary-border-width;
+//
+// hover - border-style
+//
+$button-hover-border-style: $button-border-style;
+$button-primary-hover-border-style: $button-primary-border-style;
+$button-secondary-hover-border-style: $button-secondary-border-style;
+$button-tertiary-hover-border-style: $button-tertiary-border-style;
+//
+// hover - color
+//
+$button-hover-color: $button-color;
+$button-primary-hover-color: $button-primary-color;
+$button-secondary-hover-color: #fff;
+$button-tertiary-hover-color: $button-tertiary-color;
+
+//
+// active
+//
+$button-active-opacity: 1;
+$button-active-background-color: $button-background-color;
+$button-active-border-color: $button-border-color;
+$button-active-border-width: $button-border-width;
+$button-active-border-style: $button-border-style;
+$button-active-color: $button-color;
+// primary
+$button-primary-active-opacity: $button-active-opacity;
+$button-primary-active-background-color: $button-primary-background-color;
+$button-primary-active-border-color: $button-primary-border-color;
+$button-primary-active-border-width: $button-primary-border-width;
+$button-primary-active-border-style: $button-primary-border-style;
+$button-primary-active-color: $button-primary-color;
+// secondary
+$button-secondary-active-opacity: $button-active-opacity;
+$button-secondary-active-background-color: $button-secondary-background-color;
+$button-secondary-active-border-color: $button-secondary-border-color;
+$button-secondary-active-border-width: $button-secondary-border-width;
+$button-secondary-active-border-style: $button-secondary-border-style;
+$button-secondary-active-color: $button-secondary-color;
+// tertiary
+$button-tertiary-active-opacity: $button-active-opacity;
+$button-tertiary-active-background-color: $button-tertiary-background-color;
+$button-tertiary-active-border-color: $button-tertiary-border-color;
+$button-tertiary-active-border-width: $button-tertiary-border-width;
+$button-tertiary-active-border-style: $button-tertiary-border-style;
+$button-tertiary-active-color: $button-tertiary-color;
+
+//
+// disabled
+//
+$button-disabled-background-color: $button-background-color;
+$button-disabled-opacity: 1;
+$button-disabled-background-color: $button-background-color;
+// primary
+$button-primary-disabled-opacity: 0.3;
+// secondary
+$button-secondary-disabled-opacity: 0.3;

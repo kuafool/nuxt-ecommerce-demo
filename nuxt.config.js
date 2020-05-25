@@ -1,3 +1,6 @@
+import modules from './config/nuxt.config.modules'
+import css from './config/nuxt.config.css'
+
 export default {
   mode: 'universal',
   /*
@@ -21,10 +24,6 @@ export default {
    */
   loading: { color: '#fff' },
   /*
-   ** Global CSS
-   */
-  css: [],
-  /*
    ** Plugins to load before mounting the App
    */
   plugins: [],
@@ -36,13 +35,6 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
-  ],
-  /*
-   ** Nuxt.js modules
-   */
-  modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
   ],
   /*
    ** Axios module configuration
@@ -58,4 +50,6 @@ export default {
      */
     extend(config, ctx) {},
   },
+  ...modules,
+  ...css,
 }
