@@ -21,6 +21,10 @@ $ npm run generate
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
-## workaround
+## Workaround
 
-- Update stylelint to version v11 or higher. 
+- Update stylelint to version v11 or higher.
+
+## Compatibility
+
+- Use a tag for button component for flex box compatibility.
