@@ -90,6 +90,23 @@
           >女士</selector-radio-label
         >
       </style-guide-row>
+      <style-guide-row>
+        <selector-checkbox v-model="checked"></selector-checkbox>
+        <selector-checkbox v-model="checked"></selector-checkbox>
+        <selector-checkbox v-model="checked" disabled></selector-checkbox>
+      </style-guide-row>
+      <style-guide-row>
+        <div>Fruits: {{ fruits.join(', ') }}</div>
+      </style-guide-row>
+      <style-guide-row>
+        <selector-checkbox v-model="fruits" value="apple"></selector-checkbox>
+        <selector-checkbox v-model="fruits" value="peach"></selector-checkbox>
+        <selector-checkbox
+          v-model="fruits"
+          disabled
+          value="banana"
+        ></selector-checkbox>
+      </style-guide-row>
     </style-guide-section>
   </div>
 </template>
@@ -109,6 +126,8 @@ export default {
   data() {
     return {
       appellation: '先生',
+      checked: false,
+      fruits: [],
     }
   },
   methods: {
