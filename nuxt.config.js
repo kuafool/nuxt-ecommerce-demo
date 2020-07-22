@@ -1,5 +1,6 @@
 import modules from './config/nuxt.config.modules'
 import css from './config/nuxt.config.css'
+import plugins from './config/nuxt.config.plugins'
 
 export default {
   mode: 'universal',
@@ -23,10 +24,6 @@ export default {
    ** Customize the progress-bar color
    */
   loading: { color: '#fff' },
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [],
   /*
    ** Nuxt.js dev-modules
    */
@@ -52,4 +49,5 @@ export default {
   },
   ...modules,
   ...css,
+  ...plugins,
 }

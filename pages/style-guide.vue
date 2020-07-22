@@ -46,18 +46,11 @@
 import waitAsync from '~/utils/wait-async'
 import StyleGuideSection from '~/components/style-guide/style-guide-section'
 import LoadingSpinner from '~/components/loading/loading-spinner'
-import ButtonPrimary from '~/components/buttons/button-primary'
-import ButtonSecondary from '~/components/buttons/button-secondary'
-import ButtonTertiary from '~/components/buttons/button-tertiary'
 
 export default {
   components: {
     StyleGuideSection,
     LoadingSpinner,
-    // buttons
-    ButtonPrimary,
-    ButtonSecondary,
-    ButtonTertiary,
   },
   methods: {
     async startPageLoadingAsync() {
