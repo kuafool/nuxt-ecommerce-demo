@@ -45,7 +45,7 @@ export default {
   height: 56px;
   width: 100%;
 
-  @include layout-tablet {
+  @include layout-desktop {
     height: 44px;
   }
 

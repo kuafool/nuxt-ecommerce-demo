@@ -85,13 +85,13 @@ textarea {
  * 清除 input 样式
  */
 
-input {
-  border-radius: 0;
-  -webkit-appearance: none;
-  // 解决在 ios 下点击 input 页面空白问题
-  //-webkit-transform: translateZ(0);
-  //transform: translateZ(0);
-}
+// input {
+//   border-radius: 0;
+//   -webkit-appearance: none;
+//   // 解决在 ios 下点击 input 页面空白问题
+//   //-webkit-transform: translateZ(0);
+//   //transform: translateZ(0);
+// }
 
 /**
  * safari placeholder 垂直居中

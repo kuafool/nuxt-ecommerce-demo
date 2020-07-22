@@ -36,6 +36,33 @@
       <button-tertiary>Tertiary</button-tertiary>
       <button-tertiary disabled>Tertiary Disabled</button-tertiary>
     </style-guide-section>
+    <style-guide-section>
+      <template #title>
+        Selectors
+      </template>
+      <style-guide-row>
+        <selector-radio></selector-radio>
+        <selector-radio checked></selector-radio>
+      </style-guide-row>
+      <style-guide-row>
+        <div>{{ appellation }}</div>
+        <selector-radio
+          v-model="appellation"
+          name="appellation"
+          value="先生"
+        ></selector-radio>
+        <selector-radio
+          v-model="appellation"
+          name="appellation"
+          value="太太"
+        ></selector-radio>
+        <selector-radio
+          v-model="appellation"
+          name="appellation"
+          value="小姐"
+        ></selector-radio>
+      </style-guide-row>
+    </style-guide-section>
   </div>
 </template>
 
@@ -50,6 +77,11 @@ export default {
     StyleGuideSection,
     StyleGuideRow,
     LoadingSpinner,
+  },
+  data() {
+    return {
+      appellation: '先生',
+    }
   },
   methods: {
     async startPageLoadingAsync() {
