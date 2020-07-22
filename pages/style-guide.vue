@@ -20,7 +20,7 @@
       <loading-spinner :width="16"></loading-spinner>
       <loading-spinner :width="8"></loading-spinner>
       <style-guide-row>
-        <button-primary @click.native="startPageLoadingAsync"
+        <button-primary @click="startPageLoadingAsync"
           >Page Loading</button-primary
         >
       </style-guide-row>

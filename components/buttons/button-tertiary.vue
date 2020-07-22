@@ -5,6 +5,7 @@
       'component-button-tertiary',
       { 'is-disabled': disabled },
     ]"
+    v-on="$listeners"
     ><slot></slot
   ></anchor-or-nuxt-link>
 </template>

@@ -5,6 +5,7 @@
       'component-button-primary',
       { 'is-disabled': disabled },
     ]"
+    v-on="$listeners"
     ><slot></slot
   ></anchor-or-nuxt-link>
 </template>
