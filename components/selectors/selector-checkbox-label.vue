@@ -2,18 +2,21 @@
   <label
     :for="$attrs.id"
     :disabled="$attrs.disabled"
-    class="component-selector-radio-label"
-    ><selector-radio v-bind="$attrs" @updateModel="updateModel"></selector-radio
+    class="component-selector-checkbox-label"
+    ><selector-checkbox
+      v-bind="$attrs"
+      @updateModel="updateModel"
+    ></selector-checkbox
     ><slot></slot
   ></label>
 </template>
 
 <script>
-import SelectorRadio from '~/components/selectors/selector-radio'
+import SelectorCheckbox from '~/components/selectors/selector-checkbox'
 
 export default {
   components: {
-    SelectorRadio,
+    SelectorCheckbox,
   },
   inheritAttrs: false,
   model: {
@@ -31,14 +34,14 @@ export default {
 </script>
 
 <style lang="scss">
-.component-selector-radio-label {
+.component-selector-checkbox-label {
   font-size: 12px;
   cursor: pointer;
   display: inline-flex;
   line-height: normal;
   align-items: center;
 
-  .component-selector-radio {
+  .component-selector-checkbox {
     margin-right: 4px;
   }
 

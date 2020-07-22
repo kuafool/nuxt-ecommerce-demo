@@ -9,6 +9,7 @@ import ButtonTertiary from '~/components/buttons/button-tertiary'
 import SelectorRadio from '~/components/selectors/selector-radio'
 import SelectorRadioLabel from '~/components/selectors/selector-radio-label'
 import SelectorCheckbox from '~/components/selectors/selector-checkbox'
+import SelectorCheckboxLabel from '~/components/selectors/selector-checkbox-label'
 
 const components = {
   AnchorOrNuxtLink,
@@ -18,6 +19,7 @@ const components = {
   SelectorRadio,
   SelectorRadioLabel,
   SelectorCheckbox,
+  SelectorCheckboxLabel,
 }
 
 Object.keys(components).forEach(key => {

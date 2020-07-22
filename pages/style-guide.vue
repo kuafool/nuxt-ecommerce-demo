@@ -107,6 +107,27 @@
           value="banana"
         ></selector-checkbox>
       </style-guide-row>
+      <style-guide-row>
+        <selector-checkbox-label
+          id="checkbox-label-apple"
+          v-model="fruits"
+          value="apple"
+          >apple</selector-checkbox-label
+        >
+        <selector-checkbox-label
+          id="checkbox-label-peach"
+          v-model="fruits"
+          value="peach"
+          disabled
+          >peach</selector-checkbox-label
+        >
+        <selector-checkbox-label
+          id="checkbox-label-banana"
+          v-model="fruits"
+          value="banana"
+          >banana</selector-checkbox-label
+        >
+      </style-guide-row>
     </style-guide-section>
   </div>
 </template>
