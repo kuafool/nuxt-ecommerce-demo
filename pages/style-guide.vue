@@ -43,13 +43,17 @@
       <style-guide-row>
         <selector-radio></selector-radio>
         <selector-radio checked></selector-radio>
+        <selector-radio disabled></selector-radio>
       </style-guide-row>
       <style-guide-row>
         <div>{{ appellation }}</div>
+      </style-guide-row>
+      <style-guide-row>
         <selector-radio
           v-model="appellation"
           name="appellation"
           value="先生"
+          disabled
         ></selector-radio>
         <selector-radio
           v-model="appellation"
@@ -61,6 +65,30 @@
           name="appellation"
           value="小姐"
         ></selector-radio>
+      </style-guide-row>
+      <style-guide-row>
+        <selector-radio-label
+          id="radio-label-mr"
+          v-model="appellation"
+          name="appellationAgain"
+          value="先生"
+          >先生</selector-radio-label
+        >
+        <selector-radio-label
+          id="radio-label-mrs"
+          v-model="appellation"
+          name="appellationAgain"
+          value="太太"
+          disabled
+          >太太</selector-radio-label
+        >
+        <selector-radio-label
+          id="radio-label-ms"
+          v-model="appellation"
+          name="appellationAgain"
+          value="女士"
+          >女士</selector-radio-label
+        >
       </style-guide-row>
     </style-guide-section>
   </div>

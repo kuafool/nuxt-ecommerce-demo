@@ -7,6 +7,7 @@ import ButtonSecondary from '~/components/buttons/button-secondary'
 import ButtonTertiary from '~/components/buttons/button-tertiary'
 // selectors
 import SelectorRadio from '~/components/selectors/selector-radio'
+import SelectorRadioLabel from '~/components/selectors/selector-radio-label'
 
 const components = {
   AnchorOrNuxtLink,
@@ -14,6 +15,7 @@ const components = {
   ButtonSecondary,
   ButtonTertiary,
   SelectorRadio,
+  SelectorRadioLabel,
 }
 
 Object.keys(components).forEach(key => {

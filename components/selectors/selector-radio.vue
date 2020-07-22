@@ -12,7 +12,7 @@
 export default {
   model: {
     prop: 'model',
-    event: 'change',
+    event: 'updateModel',
   },
   /* eslint-disable-next-line */
   props: ['model', 'value'],
@@ -20,7 +20,7 @@ export default {
     radioListeners() {
       return Object.assign({}, this.$listeners, {
         change: event => {
-          this.$emit('change', event.target.value)
+          this.$emit('updateModel', event.target.value)
         },
       })
     },
@@ -40,6 +40,7 @@ export default {
   position: relative;
   display: inline-block;
   -webkit-appearance: none;
+  cursor: pointer;
 
   background-color: #fff;
   border: 1px solid #000;
@@ -53,6 +54,8 @@ export default {
   }
 
   &:checked {
+    cursor: default;
+
     &::before {
       content: '';
       box-sizing: border-box;
@@ -71,6 +74,10 @@ export default {
         height: 6px;
       }
     }
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 </style>
