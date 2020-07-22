@@ -1,18 +1,20 @@
 <template>
-  <button-base
-    :disabled="disabled"
-    class="component-button-tertiary"
-    variant="component-button--tertiary"
+  <anchor-or-nuxt-link
+    :class="[
+      'component-button',
+      'component-button-tertiary',
+      { 'is-disabled': disabled },
+    ]"
     ><slot></slot
-  ></button-base>
+  ></anchor-or-nuxt-link>
 </template>
 
 <script>
-import ButtonBase from '~/components/buttons/button-base'
+import AnchorOrNuxtLink from '~/components/anchor-or-nuxt-link'
 
 export default {
   components: {
-    ButtonBase,
+    AnchorOrNuxtLink,
   },
   props: {
     disabled: {
@@ -22,3 +24,26 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.component-button-tertiary {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: #000;
+    opacity: 0.3;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+}
+</style>

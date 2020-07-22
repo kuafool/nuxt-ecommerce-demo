@@ -19,25 +19,22 @@
       <loading-spinner :width="24"></loading-spinner>
       <loading-spinner :width="16"></loading-spinner>
       <loading-spinner :width="8"></loading-spinner>
-      <div class="page-style-guide__row">
+      <style-guide-row>
         <button-primary @click.native="startPageLoadingAsync"
           >Page Loading</button-primary
         >
-      </div>
+      </style-guide-row>
     </style-guide-section>
-    <style-guide-section>
+    <style-guide-section class="page-style-guide__buttons">
       <template #title>
         Buttons
       </template>
-      <div class="page-style-guide__row">
-        <button-primary>Primary Button</button-primary>
-      </div>
-      <div class="page-style-guide__row">
-        <button-secondary>Secondary Button</button-secondary>
-      </div>
-      <div class="page-style-guide__row">
-        <button-tertiary>Tertiary Button</button-tertiary>
-      </div>
+      <button-primary>Primary</button-primary>
+      <button-primary disabled>Primary Disabled</button-primary>
+      <button-secondary>Secondary</button-secondary>
+      <button-secondary disabled>Secondary Disabled</button-secondary>
+      <button-tertiary>Tertiary</button-tertiary>
+      <button-tertiary disabled>Tertiary Disabled</button-tertiary>
     </style-guide-section>
   </div>
 </template>
@@ -45,11 +42,13 @@
 <script>
 import waitAsync from '~/utils/wait-async'
 import StyleGuideSection from '~/components/style-guide/style-guide-section'
+import StyleGuideRow from '~/components/style-guide/style-guide-row'
 import LoadingSpinner from '~/components/loading/loading-spinner'
 
 export default {
   components: {
     StyleGuideSection,
+    StyleGuideRow,
     LoadingSpinner,
   },
   methods: {
@@ -64,9 +63,13 @@ export default {
 
 <style lang="scss">
 .page-style-guide {
-  .page-style-guide__row {
-    &:not(:first-child) {
-      margin-top: 16px;
+  padding-bottom: 80px;
+
+  .page-style-guide__buttons {
+    .component-button {
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
     }
   }
 }
