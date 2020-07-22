@@ -1,4 +1,4 @@
 export default {
-  loading: '~/components/loading/page-loading.vue',
+  loading: '~/components/loading/loading-cover.vue',
   css: ['~/assets/styles/global.scss'],
 }

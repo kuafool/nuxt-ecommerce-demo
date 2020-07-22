@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isLoading" class="component-page-loading">
+  <div v-if="isLoading" class="component-loading-cover">
     <over-lay />
     <loading-spinner />
   </div>
@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style lang="scss">
-.component-page-loading {
+.component-loading-cover {
   position: fixed;
   top: 0;
   bottom: 0;
