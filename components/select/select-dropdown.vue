@@ -166,6 +166,7 @@ export default {
 
     .component-select-dropdown__trigger {
       cursor: default;
+      background: rgba($color: #000000, $alpha: 0.1);
     }
   }
 
