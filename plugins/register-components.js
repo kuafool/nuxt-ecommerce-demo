@@ -12,6 +12,8 @@ import SelectorCheckbox from '~/components/selectors/selector-checkbox'
 import SelectorCheckboxLabel from '~/components/selectors/selector-checkbox-label'
 // inputs
 import InputText from '~/components/inputs/input-text'
+// form groups
+import FormGroup from '~/components/form-group'
 
 const components = {
   AnchorOrNuxtLink,
@@ -26,6 +28,8 @@ const components = {
   SelectorCheckboxLabel,
   // inputs
   InputText,
+  // form groups
+  FormGroup,
 }
 
 Object.keys(components).forEach(key => {

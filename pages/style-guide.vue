@@ -151,6 +151,23 @@
         placeholder="请输入"
       ></input-text>
     </style-guide-section>
+    <style-guide-section>
+      <template #title>
+        <div>Form Groups</div>
+      </template>
+      <form-group label="普通">
+        <input-text></input-text>
+      </form-group>
+      <form-group label="禁用" disabled>
+        <input-text disabled></input-text>
+      </form-group>
+      <form-group label="必填" required>
+        <input-text></input-text>
+      </form-group>
+      <form-group label="错误" error error-message="这是一条错误信息">
+        <input-text error></input-text>
+      </form-group>
+    </style-guide-section>
   </div>
 </template>
 
