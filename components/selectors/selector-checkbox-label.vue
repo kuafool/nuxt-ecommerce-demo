@@ -40,6 +40,7 @@ export default {
   display: inline-flex;
   line-height: normal;
   align-items: center;
+  color: rgba($color: #000000, $alpha: 0.65);
 
   .component-selector-checkbox {
     margin-right: 4px;
