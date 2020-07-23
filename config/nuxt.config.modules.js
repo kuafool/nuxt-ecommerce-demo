@@ -3,6 +3,7 @@ export default {
     '@nuxtjs/style-resources',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '~/modules/directives/module',
   ],
   /*
    ** Axios module configuration

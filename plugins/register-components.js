@@ -12,6 +12,9 @@ import SelectorCheckbox from '~/components/selectors/selector-checkbox'
 import SelectorCheckboxLabel from '~/components/selectors/selector-checkbox-label'
 // inputs
 import InputText from '~/components/inputs/input-text'
+// select
+import SelectDropdown from '~/components/select/select-dropdown'
+import SelectOption from '~/components/select/select-option'
 // form groups
 import FormGroup from '~/components/form-group'
 
@@ -28,6 +31,9 @@ const components = {
   SelectorCheckboxLabel,
   // inputs
   InputText,
+  // select
+  SelectDropdown,
+  SelectOption,
   // form groups
   FormGroup,
 }

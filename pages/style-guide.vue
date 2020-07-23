@@ -151,6 +151,29 @@
         placeholder="请输入"
       ></input-text>
     </style-guide-section>
+    <style-guide-section class="page-style-guide__selects">
+      <template #title>
+        Select
+      </template>
+      <select-dropdown placeholder="普通"></select-dropdown>
+      <select-dropdown placeholder="禁用" disabled></select-dropdown>
+      <select-dropdown placeholder="错误" error></select-dropdown>
+      <select-dropdown
+        placeholder="错误且禁用"
+        error
+        disabled
+      ></select-dropdown>
+      <select-dropdown
+        v-model="selectedString"
+        :options="stringOptions"
+        placeholder="请选择"
+      ></select-dropdown>
+      <select-dropdown
+        v-model="selectedObject"
+        text-path="name"
+        placeholder="请选择"
+      ></select-dropdown>
+    </style-guide-section>
     <style-guide-section>
       <template #title>
         <div>Form Groups</div>
@@ -189,6 +212,9 @@ export default {
       checked: false,
       fruits: [],
       input: '',
+      selectedString: 'string',
+      stringOptions: ['apple', 'peach', 'orange'],
+      selectedObject: { name: 'object' },
     }
   },
   methods: {
@@ -215,6 +241,12 @@ export default {
 
   .page-style-guide__inputs {
     .component-input-text {
+      margin-top: 16px;
+    }
+  }
+
+  .page-style-guide__selects {
+    .component-select-dropdown {
       margin-top: 16px;
     }
   }

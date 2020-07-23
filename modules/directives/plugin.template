@@ -1,0 +1,13 @@
+import Vue from 'vue'
+
+<% if (options.directives && options.directives.length) { %>
+  <% for (let directive of options.directives) { %>
+    import <%= directive.name %> from '<%= directive.path %>'
+  <% } %>
+<% } %>
+
+<% if (options.directives && options.directives.length) { %>
+  <% for(let directive of options.directives) { %>
+    Vue.directive('<%= directive.name %>', <%= directive.name %>)
+  <% } %>
+<% } %>
