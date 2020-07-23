@@ -10,16 +10,22 @@ import SelectorRadio from '~/components/selectors/selector-radio'
 import SelectorRadioLabel from '~/components/selectors/selector-radio-label'
 import SelectorCheckbox from '~/components/selectors/selector-checkbox'
 import SelectorCheckboxLabel from '~/components/selectors/selector-checkbox-label'
+// inputs
+import InputText from '~/components/inputs/input-text'
 
 const components = {
   AnchorOrNuxtLink,
+  // buttons
   ButtonPrimary,
   ButtonSecondary,
   ButtonTertiary,
+  // selectors
   SelectorRadio,
   SelectorRadioLabel,
   SelectorCheckbox,
   SelectorCheckboxLabel,
+  // inputs
+  InputText,
 }
 
 Object.keys(components).forEach(key => {

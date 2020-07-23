@@ -46,7 +46,7 @@
         <selector-radio disabled></selector-radio>
       </style-guide-row>
       <style-guide-row>
-        <div>{{ appellation }}</div>
+        <div>称谓：{{ appellation }}</div>
       </style-guide-row>
       <style-guide-row>
         <selector-radio
@@ -129,6 +129,28 @@
         >
       </style-guide-row>
     </style-guide-section>
+    <style-guide-section class="page-style-guide__inputs">
+      <template #title>
+        Inputs
+      </template>
+      <style-guide-row>
+        <div>输入：{{ input }}</div>
+      </style-guide-row>
+      <input-text placeholder="请输入"></input-text>
+      <input-text
+        v-model="input"
+        maxlength="4"
+        placeholder="请输入"
+      ></input-text>
+      <input-text v-model="input" disabled placeholder="请输入"></input-text>
+      <input-text v-model="input" error placeholder="请输入"></input-text>
+      <input-text
+        v-model="input"
+        error
+        disabled
+        placeholder="请输入"
+      ></input-text>
+    </style-guide-section>
   </div>
 </template>
 
@@ -149,6 +171,7 @@ export default {
       appellation: '先生',
       checked: false,
       fruits: [],
+      input: '',
     }
   },
   methods: {
@@ -170,6 +193,12 @@ export default {
       &:not(:first-child) {
         margin-top: 16px;
       }
+    }
+  }
+
+  .page-style-guide__inputs {
+    .component-input-text {
+      margin-top: 16px;
     }
   }
 }
