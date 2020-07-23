@@ -91,6 +91,7 @@ export default {
 
   &[disabled] {
     opacity: 0.3;
+    background: rgba($color: #000000, $alpha: 0.1);
   }
 
   &.is-error:not([disabled]) {
