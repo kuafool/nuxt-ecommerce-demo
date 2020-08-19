@@ -4,6 +4,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '~/modules/directives/module',
+    'nuxt-api-module',
   ],
   /*
    ** Axios module configuration
