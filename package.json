@@ -2,7 +2,7 @@
   "name": "nuxt-ecommerce-demo",
   "version": "1.0.0",
   "description": "E-commerce demo site built with Nuxt.js.",
-  "author": "kuafool",
+  "author": "Hank",
   "private": true,
   "scripts": {
     "dev": "nuxt",

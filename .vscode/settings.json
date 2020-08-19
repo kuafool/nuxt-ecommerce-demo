@@ -56,15 +56,6 @@
     "keyframes",
     "rgba",
     "mixins",
-    // CSS colors
-    "transparant",
-    "lightcyan",
-    "lightpink",
-    "lightyellow",
-    "lightskyblue",
-    "lightcoral",
-    "lightblue",
-    "lightgreen",
     // JavaScript
     "typeof",
     "concat",
@@ -95,6 +86,7 @@
     "vuelidate",
     "lazyload",
     "swiper",
+    "camelcase",
     // third parties
     "wechat",
     "weibo",
