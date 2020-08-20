@@ -1,11 +1,15 @@
 <template>
-  <div class="page-home"></div>
+  <div class="page-home">whoami</div>
 </template>
 
 <script>
 export default {
-  asyncData({ redirect }) {
-    redirect('/style-guide')
-  },
+  asyncData({ redirect }) {},
 }
 </script>
+
+<style lang="scss">
+.page-home {
+  background: lightblue;
+}
+</style>

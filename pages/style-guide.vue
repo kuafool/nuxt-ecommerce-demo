@@ -201,6 +201,7 @@ import StyleGuideRow from '~/components/style-guide/style-guide-row'
 import LoadingSpinner from '~/components/loading/loading-spinner'
 
 export default {
+  layout: 'empty',
   components: {
     StyleGuideSection,
     StyleGuideRow,
