@@ -1,25 +1,16 @@
 {
   "vetur.format.defaultFormatter.html": "prettier",
   "cSpell.enableFiletypes": [
-    "asciidoc",
-    "css",
-    "git-commit",
-    "html",
-    "javascript",
-    "json",
-    "jsonc",
-    "less",
-    "markdown",
-    "plaintext",
-    "scss",
-    "text",
-    "typescript",
-    "typescriptreact",
+    "diff",
+    "dockerfile",
+    "editorconfig",
+    "git-rebase",
+    "graphql",
+    "ignore",
+    "jest-snapshot",
     "vue",
     "vue-html",
-    "vue-postcss",
-    "yaml",
-    "yml"
+    "vue-postcss"
   ],
   "cSpell.words": [
     // words
@@ -92,8 +83,6 @@
     "weibo",
     "alipay",
     // domain
-    "ecommerce",
-    // authors
-    "kuafool"
+    "ecommerce"
   ]
 }
